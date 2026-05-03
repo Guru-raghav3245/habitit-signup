@@ -15,7 +15,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 20px;
     }
@@ -77,11 +77,25 @@
       margin: 20px 0;
     }
 
-    img.screenshot {
-      width: 100%;
+    .screenshots {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .screenshots img {
+      width: 45%;
+      max-width: 250px;
       border-radius: 10px;
-      margin-top: 10px;
       border: 1px solid #334155;
+    }
+
+    .highlight-date {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff; /* changed from green to white */
+      margin: 15px 0;
     }
 
     footer {
@@ -101,6 +115,23 @@
 
     <h1>Habitit</h1>
     <p>Join the closed testing program and try Habitit before release</p>
+
+    <!-- Tester Commitment -->
+    <div class="card">
+      <h2>Tester Commitment</h2>
+
+      <p>
+        Testers are expected to actively use the app during the following period:
+      </p>
+
+      <div class="highlight-date">
+        May 11 – May 25
+      </div>
+
+      <p>
+        Please spend at least a few minutes each day exploring features and reporting any issues.
+      </p>
+    </div>
 
     <!-- Instructions -->
     <div class="card">
@@ -129,7 +160,7 @@
         Make sure you are logged into the same Google account for both steps.
       </p>
 
-      <p style="color: #9ca3af;">
+      <p>
         If the app is not visible, wait a few minutes and try again.
       </p>
     </div>
@@ -137,8 +168,10 @@
     <!-- Screenshots -->
     <div class="card">
       <h2>App Preview</h2>
-      <img src="screenshot1.png" class="screenshot">
-      <img src="screenshot2.png" class="screenshot">
+      <div class="screenshots">
+        <img src="screenshot1.png" alt="Screenshot 1">
+        <img src="screenshot2.png" alt="Screenshot 2">
+      </div>
     </div>
 
     <!-- Support -->
